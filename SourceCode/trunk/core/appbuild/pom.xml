@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.arvind.esociety.core</groupId>
+  <artifactId>appbuild</artifactId>
+  <packaging>ear</packaging>
+  <name>appbuild</name>
+  <version>${esociety.version}</version>
+ 
+  <parent>
+    <groupId>com.arvind.esociety</groupId>
+    <artifactId>core</artifactId>
+    <version>${esociety.version}</version>
+  </parent>
+ 
+  <dependencies>
+    <!-- web and ejb modules -->
+    <dependency>
+      <groupId>com.arvind.esociety.core.ESOCIETY.components</groupId>
+      <artifactId>Login</artifactId>
+      <version>${esociety.version}</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+      <artifactId>db</artifactId>
+      <version>${esociety.version}</version>
+      <type>jar</type>
+    </dependency>
+    <!-- external lucene libraries -->
+    <dependency>
+      <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+      <artifactId>web</artifactId>
+      <version>${esociety.version}</version>
+	  <type>war</type>
+    </dependency>
+   </dependencies>
+ 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>2.3.2</version>
+        <!-- configuring the ear plugin -->
+        <configuration>
+          <modules>
+            <webModule>
+              <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+              <artifactId>web</artifactId>
+            </webModule>
+            <!--ejbModule>
+              <groupId>org.example.mvnearplg</groupId>
+              <artifactId>ejb</artifactId>
+            </ejbModule-->
+            <!--extra lucene libs into lucenelib directory -->
+            <jarModule>
+              <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+              <artifactId>db</artifactId>
+             </jarModule>
+            <jarModule>
+              <groupId>com.arvind.esociety.core.ESOCIETY.components</groupId>
+              <artifactId>Login</artifactId>
+            </jarModule>
+          </modules>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

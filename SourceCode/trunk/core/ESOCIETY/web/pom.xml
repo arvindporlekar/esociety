@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+		<groupId>com.arvind.esociety.core</groupId>
+		<artifactId>ESOCIETY</artifactId>
+		<version>${esociety.version}</version>
+	</parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+  <artifactId>web</artifactId>
+  <packaging>war</packaging>
+  <version>${esociety.version}</version>
+  <name>web</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>web</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+					  <source>1.6</source>
+					  <target>1.6</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+</build>
+</project>
