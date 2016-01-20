@@ -9,9 +9,8 @@
   <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
   <artifactId>web</artifactId>
   <packaging>war</packaging>
-  <version>${esociety.version}</version>
   <name>web</name>
-  <url>http://maven.apache.org</url>
+  <version>${esociety.version}</version>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
