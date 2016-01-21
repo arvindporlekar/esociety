@@ -18,6 +18,11 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+	 <dependency>
+      <groupId>com.arvind.esociety.core.ESOCIETY.components</groupId>
+      <artifactId>Login</artifactId>
+      <version>${esociety.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>web</finalName>
