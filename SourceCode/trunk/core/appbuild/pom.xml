@@ -10,7 +10,7 @@
   <parent>
     <groupId>com.arvind.esociety</groupId>
     <artifactId>core</artifactId>
-    <version>${esociety.version}</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
  
   <dependencies>
@@ -26,13 +26,31 @@
 			  <version>${esociety.version}</version>
 			  <type>jar</type>
 		</dependency>
-			<!-- external lucene libraries -->
 		<dependency>
 			  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
 			  <artifactId>web</artifactId>
 			  <version>${esociety.version}</version>
 			  <type>war</type>
 		</dependency>
+		 <dependency>
+			  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+			  <artifactId>controller</artifactId>
+			  <version>${esociety.version}</version>
+			  <type>jar</type>
+		</dependency>
+		<dependency>
+			  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+			  <artifactId>common</artifactId>
+			  <version>${esociety.version}</version>
+			  <type>jar</type>
+		</dependency>
+		<dependency>
+			  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+			  <artifactId>deligator</artifactId>
+			  <version>${esociety.version}</version>
+			  <type>jar</type>
+		</dependency>
+		
 		<dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-webmvc</artifactId>
@@ -158,6 +176,18 @@
 					<jarModule>
 					  <groupId>com.arvind.esociety.core.ESOCIETY.components</groupId>
 					  <artifactId>Login</artifactId>
+					</jarModule>
+					<jarModule>
+					  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+					  <artifactId>controller</artifactId>
+					</jarModule>
+					<jarModule>
+					  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+					  <artifactId>common</artifactId>
+					</jarModule>
+					<jarModule>
+					  <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+					  <artifactId>deligator</artifactId>
 					</jarModule>
 				  </modules>
 				</configuration>

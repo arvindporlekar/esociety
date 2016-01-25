@@ -3,13 +3,13 @@
   <parent>
 		<groupId>com.arvind.esociety.core</groupId>
 		<artifactId>ESOCIETY</artifactId>
-		<version>${esociety.version}</version>
+		<version>1.0-SNAPSHOT</version>
 	</parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
   <artifactId>db</artifactId>
   <packaging>jar</packaging>
-  <version>${esociety.version}</version>
+  <version>1.0-SNAPSHOT</version>
   <name>db</name>
   <url>http://maven.apache.org</url>
   <dependencies>

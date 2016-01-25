@@ -1,4 +1,4 @@
-package com.arvind.esociety.controller;
+package com.arvind.esociety.login.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.arvind.esociety.vo.Person;
+import com.arvind.esociety.login.vo.Person;
 
 @Controller
 public class SpringTilesController {

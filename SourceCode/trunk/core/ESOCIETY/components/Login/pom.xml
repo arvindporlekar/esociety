@@ -9,7 +9,7 @@
   <groupId>com.arvind.esociety.core.ESOCIETY.components</groupId>
   <artifactId>Login</artifactId>
   <packaging>jar</packaging>
-  <version>${esociety.version}</version>
+  <version>1.0-SNAPSHOT</version>
   <name>Login</name>
   <url>http://maven.apache.org</url>
   <dependencies>

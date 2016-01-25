@@ -1,4 +1,4 @@
-package com.arvind.esociety.vo;
+package com.arvind.esociety.login.vo;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,7 +4,7 @@
   <groupId>com.arvind.esociety</groupId>
   <artifactId>core</artifactId>
   <packaging>pom</packaging>
-  <version>${esociety.version}</version>
+  <version>1.0-SNAPSHOT</version>
   <name>esociety</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -17,7 +17,11 @@
 		<org.slf4j.version>1.5.10</org.slf4j.version>
 		<junit.version>4.7</junit.version>
   </properties>
-   
+    <modules>
+		<module>ESOCIETY</module>
+		<module>appbuild</module>
+	</modules>
+		
   <build>
 		<pluginManagement>
 			<plugins>

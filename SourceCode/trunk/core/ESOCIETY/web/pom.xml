@@ -3,14 +3,14 @@
   <parent>
 		<groupId>com.arvind.esociety.core</groupId>
 		<artifactId>ESOCIETY</artifactId>
-		<version>${esociety.version}</version>
+		<version>1.0-SNAPSHOT</version>
 	</parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
   <artifactId>web</artifactId>
   <packaging>war</packaging>
   <name>web</name>
-  <version>${esociety.version}</version>
+  <version>1.0-SNAPSHOT</version>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -19,8 +19,8 @@
       <scope>test</scope>
     </dependency>
 	 <dependency>
-      <groupId>com.arvind.esociety.core.ESOCIETY.components</groupId>
-      <artifactId>Login</artifactId>
+      <groupId>com.arvind.esociety.core.ESOCIETY</groupId>
+      <artifactId>controller</artifactId>
       <version>${esociety.version}</version>
     </dependency>
   </dependencies>
